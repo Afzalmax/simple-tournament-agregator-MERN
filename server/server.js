@@ -3,11 +3,12 @@ const mongo = require('mongoose')
 const cors = require('cors')
 const bodyparser = require('body-parser')
 const app = express()
+const dotenv = require('dotenv').config()
 const port = 5001
 app.use(bodyparser.json({ limit: '10mb' }));
 app.use(cors())
 
-mongo.connect('mongodb://127.0.0.1:27017/studdb1')
+mongo.connect(process.env.MONGO_URL)
 .then((()=>{console.log("connected to DB")}))
 
 const userSchema= new mongo.Schema({
