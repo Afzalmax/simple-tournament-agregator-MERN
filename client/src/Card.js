@@ -7,7 +7,7 @@ function Card() {
     const [selectedImage, setSelectedImage] = useState(null);
 
     useEffect(() => {
-        axios.get("http://localhost:5001/users")
+        axios.get("https://tournament-aggregator.onrender.com/users")
             .then(response => setStudents(response.data))
             .catch(err => console.log(err));
     }, []);

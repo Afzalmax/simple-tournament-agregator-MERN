@@ -12,7 +12,7 @@ const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     if(name){
-    await axios.post('http://localhost:5001/users', { name, sport, mobile, image})
+    await axios.post('https://tournament-aggregator.onrender.com/users', { name, sport, mobile, image})
       .then(() => navigate('/'))
       .catch(err => console.log(err))
    
