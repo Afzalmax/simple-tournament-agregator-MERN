@@ -1,0 +1,25 @@
+
+
+.container {
+    width: 600px; 
+    height: 300px;;
+    margin: 0 auto; 
+    margin-top: 100px; 
+    padding: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background-image:url(./media/img1.jpg);
+  }
+  label {
+    display: block; 
+    margin-bottom: 5px; 
+    color: antiquewhite;
+  }
+  .group {
+    margin-bottom: 20px; 
+  }
+  
